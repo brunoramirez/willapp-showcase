@@ -18,9 +18,9 @@
 
 **The Origin Story:** WillApp was conceived by a team of 5 students from UC3M (Universidad Carlos III de Madrid) who were ready to embark on their path in entrepreneurship and innovation. The idea sparked during a casual conversation in a bar, and over the course of an entire year of dedicated development, the team brought that vision to life.
 
-**The Magic of "Wills":** At the core of the platform is the concept of a "Will"—which can be absolutely *any* goal a user wants to achieve. Whether it's passing a quantum physics exam, hitting the gym, or learning how to play basketball, WillApp provides the framework to make it happen. 
+**The Magic of "Wills":** At the core of the platform is the concept of a "Will" (which can be absolutely *any* goal a user wants to achieve). Whether it's passing a quantum physics exam, hitting the gym, or learning how to play basketball, WillApp provides the framework to make it happen. 
 
-**Advanced AI Verification:** To ensure genuine accountability, WillApp utilizes a strict AI verification engine. When a user uploads a photo to verify a completed task, the AI cross references *everything*—from the specific name of the task to the granular details within the picture—ensuring that users are actually putting in the work before rewarding them.
+**Advanced AI Verification:** To ensure genuine accountability, WillApp utilizes a strict AI verification engine. When a user uploads a photo to verify a completed task, the AI cross references *everything* (from the specific name of the task to the granular details within the picture) ensuring that users are actually putting in the work before rewarding them.
 
 **Gamified Progression:** As users verify their tasks, they earn points that unlock access to exclusive rewards. While the platform currently focuses on individual progression and sharing verifications with a private circle of friends, internal competitions and leaderboards are on the roadmap to take the gamification loop to the next level.
 
