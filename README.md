@@ -1,7 +1,7 @@
 <div align="center">
   <img src="images/bluelogo.png" alt="WillApp Logo" width="150"/>
-  <h1>WillApp - Premium Social Application</h1>
-  <p><strong>A modern, glassmorphic social experience built with a high-performance stack.</strong></p>
+  <h1>WillApp - Social Accountability Platform</h1>
+  <p><strong>A gamified social productivity app that uses AI photo verification to help university students achieve their life objectives ("Wills") alongside their closest friends.</strong></p>
 </div>
 
 > **Note:** This is a showcase repository. The source code for WillApp is proprietary and closed-source. This repository provides a high-level overview of the architecture, technologies, and technical challenges solved during development.
@@ -37,6 +37,7 @@ WillApp leverages a modern, robust, and scalable technology stack spanning mobil
 * **Authentication:** Firebase Auth
 * **App Hosting:** Firebase App Hosting for the web platform
 * **Analytics & Stability:** Firebase Crashlytics & Remote Config
+* **Storage:** Firebase Storage (for AI task verification photos and audio reactions)
 
 ## 📐 Architecture Overview
 
@@ -134,17 +135,17 @@ erDiagram
 ### 1. Architecting the Firebase SQL Backend (Data Connect)
 **Challenge:** WillApp required complex, highly relational data queries (e.g., fetching a user's feed along with the nested comments, like counts, and author details in a single pass). Traditional NoSQL document structures in Firestore would have required excessive client-side joins and high read counts, leading to performance bottlenecks and increased costs.
 
-**Solution:** I adopted **Firebase Data Connect**, powered by PostgreSQL. By designing a strict relational schema and utilizing GraphQL for our queries, I was able to offload the heavy joining logic to the database layer. This drastically reduced network payload sizes and simplified the client-side repository layer, ensuring a snappy feed experience even on slower mobile networks.
+**Solution:** We adopted **Firebase Data Connect**, powered by PostgreSQL. By designing a strict relational schema and utilizing GraphQL for our queries, we were able to offload the heavy joining logic to the database layer. This drastically reduced network payload sizes and simplified the client-side repository layer, ensuring a snappy feed experience even on slower mobile networks.
 
 ### 2. Optimizing State Management for Deep Widget Trees
 **Challenge:** The mobile application features a highly interactive UI with nested components, glassmorphic overlays, and real-time updates. Initially, relying on standard `setState` or simple inherited widgets caused unnecessary rebuilds of large widget trees, leading to frame drops during animations and scrolling.
 
-**Solution:** I implemented **Riverpod** to heavily decouple the business logic from the UI. By extracting large widget trees into smaller, private `StatelessWidget` and `StatefulWidget` classes, and carefully scoping provider watchers (`ref.watch`) to only the granular widgets that needed the data, I minimized unnecessary rebuilds. This resulted in a consistent 60 FPS performance, keeping the app smooth.
+**Solution:** We implemented **Riverpod** to heavily decouple the business logic from the UI. By extracting large widget trees into smaller, private `StatelessWidget` and `StatefulWidget` classes, and carefully scoping provider watchers (`ref.watch`) to only the granular widgets that needed the data, we minimized unnecessary rebuilds. This resulted in a consistent 60 FPS performance, keeping the app smooth.
 
 ### 3. Building Complex, Premium Animations on the Web
 **Challenge:** The brand identity of WillApp relies on premium aesthetics, specifically "Liquid Glass" effects, ambient orbs, and seamless transitions on the web dashboard. Achieving these micro-interactions without causing layout thrashing or draining the user's battery was difficult using standard CSS transitions.
 
-**Solution:** I leveraged **Framer Motion** within the Next.js ecosystem. By using hardware-accelerated properties (`transform` and `opacity`) and Framer Motion's `AnimatePresence` for route transitions, I created fluid, organic animations. I also structured the UI with a strict design system relying on Tailwind CSS tokens (`AppColors`, `AppSpacing`), ensuring that all complex components (like glassmorphism panels) remained accessible, performant, and consistent across the entire platform.
+**Solution:** We leveraged **Framer Motion** within the Next.js ecosystem. By using hardware-accelerated properties (`transform` and `opacity`) and Framer Motion's `AnimatePresence` for route transitions, we created fluid, organic animations. We also structured the UI with a strict design system relying on Tailwind CSS tokens (`AppColors`, `AppSpacing`), ensuring that all complex components (like glassmorphism panels) remained accessible, performant, and consistent across the entire platform.
 
 ---
-*Built with passion.*
+*Built with passion by the WillApp team.*
