@@ -26,6 +26,7 @@ WillApp leverages a modern, robust, and scalable technology stack spanning mobil
 * **Localization:** AppLocalizations (l10n) for multi-language support (English, Spanish, French)
 
 ### Web Dashboard & Landing Page
+* **Link:** [willapp.es](https://willapp.es)
 * **Framework:** Next.js (React)
 * **Styling:** Tailwind CSS + custom Design Tokens (AppColors, AppSpacing)
 * **Animations:** Framer Motion (for premium micro-interactions and layout transitions)
@@ -45,7 +46,7 @@ The application follows a clean, decoupled architecture separating the client-si
 ```mermaid
 graph TD
     %% Mobile Clients
-    subgraph Mobile Client [Flutter Mobile App]
+    subgraph MobileClient [Flutter Mobile App]
         UI[UI Layer / Views]
         State[State Management / Providers]
         Repos[Repositories / Models]
@@ -55,7 +56,7 @@ graph TD
     end
 
     %% Web Client
-    subgraph Web Client [Next.js Dashboard]
+    subgraph WebClient [Next.js Dashboard]
         Pages[Web Pages]
         Components[UI Components]
         API[API Routes / Hooks]
@@ -65,7 +66,7 @@ graph TD
     end
 
     %% Firebase Cloud Infrastructure
-    subgraph Firebase Cloud
+    subgraph FirebaseCloud [Firebase Cloud]
         Auth[Firebase Authentication]
         FDC[(Firebase Data Connect <br/> PostgreSQL)]
         Storage[Firebase Storage]
@@ -81,8 +82,8 @@ graph TD
     %% Styling
     classDef client fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000
     classDef cloud fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
-    class Mobile Client,Web Client client
-    class Firebase Cloud cloud
+    class MobileClient,WebClient client
+    class FirebaseCloud cloud
 ```
 
 ### Relational Database Schema (Firebase Data Connect)
