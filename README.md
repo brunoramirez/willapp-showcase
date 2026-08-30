@@ -157,5 +157,13 @@ erDiagram
 
 **Solution:** We leveraged **Framer Motion** within the Next.js ecosystem. By using hardware-accelerated properties (`transform` and `opacity`) and Framer Motion's `AnimatePresence` for route transitions, we created fluid, organic animations. We also structured the UI with a strict design system relying on Tailwind CSS tokens (`AppColors`, `AppSpacing`), ensuring that all complex components (like glassmorphism panels) remained accessible, performant, and consistent across the entire platform.
 
+## 🌟 Open-Source Contributions
+
+As part of the WillApp development process, we extracted our highly-customized, premium glassmorphism UI components into an open-source Flutter package. 
+
+You can check out our reusable **[Flutter Glass Navigation](https://github.com/brunoralvarez19/flutter-glass-navigation)** repository, which features:
+* `GlassAppBar`: A frosted glass app bar with an expanding search body.
+* `GlassBottomNavBar`: A floating, glassmorphic bottom navigation bar with fluid, hardware-accelerated micro-interactions.
+
 ---
 *Built with passion by the WillApp team.*
