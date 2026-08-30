@@ -161,7 +161,7 @@ erDiagram
 
 As part of the WillApp development process, we extracted our highly-customized, premium glassmorphism UI components into an open-source Flutter package. 
 
-You can check out our reusable **[Flutter Glass Navigation](https://github.com/brunoralvarez19/flutter-glass-navigation)** repository, which features:
+You can check out our reusable **[Flutter Glass Navigation](https://github.com/brunoramirez/flutter-glass-navigation)** repository, which features:
 * `GlassAppBar`: A frosted glass app bar with an expanding search body.
 * `GlassBottomNavBar`: A floating, glassmorphic bottom navigation bar with fluid, hardware-accelerated micro-interactions.
 
