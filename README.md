@@ -1,7 +1,7 @@
 <div align="center">
   <img src="images/bluelogo.png" alt="WillApp Logo" width="150"/>
   <h1>WillApp: Social Productivity Platform</h1>
-  <p><strong>Turn your ambition into daily habits. Verify with AI. Share with your circle.</strong></p>
+  <p><strong>Build daily habits. Verify with AI. Share with your circle.</strong></p>
   <p>A gamified productivity & study roadmap engine that turns high-stakes goals into daily milestones and verifies task completion with multimodal AI photo inspection.</p>
 </div>
 
