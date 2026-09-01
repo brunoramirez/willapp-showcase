@@ -1,10 +1,11 @@
 <div align="center">
   <img src="images/bluelogo.png" alt="WillApp Logo" width="150"/>
-  <h1>WillApp: Social Accountability Platform</h1>
-  <p><strong>A gamified social productivity app that uses AI photo verification to help university students achieve their life objectives ("Wills") alongside their closest friends.</strong></p>
+  <h1>WillApp: Social Productivity Platform</h1>
+  <p><strong>Turn your ambition into daily habits. Verify with AI. Share with your circle.</strong></p>
+  <p>A gamified productivity & study roadmap engine that turns high-stakes goals into daily milestones and verifies task completion with multimodal AI photo inspection.</p>
 </div>
 
-> **Note:** This is a showcase repository. The source code for WillApp is proprietary and closed source. This repository provides a high level overview of the architecture, technologies, and technical challenges solved during development.
+> **Note:** This is a showcase repository. The source code for WillApp is proprietary. This repository provides an architectural overview of the technologies, multimodal AI pipelines, and technical systems engineered for the platform.
 
 ## 📱 Screenshots
 
@@ -14,15 +15,12 @@
   <img src="images/tutoria_screen.png" width="250" alt="Tutorial Screen"/>
 </div>
 
-## 💡 The WillApp Vision & Mechanics
+## 💡 The WillApp Engine & Architecture
 
-**The Origin Story:** WillApp was conceived by a team of 5 students from UC3M (Universidad Carlos III de Madrid) who were ready to embark on their path in entrepreneurship and innovation. The idea sparked during a casual conversation in a bar, and over the course of an entire year of dedicated development, the team brought that vision to life.
-
-**The Magic of "Wills":** At the core of the platform is the concept of a "Will" (which can be absolutely *any* goal a user wants to achieve). Whether it's passing a quantum physics exam, hitting the gym, or learning how to play basketball, WillApp provides the framework to make it happen. 
-
-**Advanced AI Verification:** To ensure genuine accountability, WillApp utilizes a strict AI verification engine. When a user uploads a photo to verify a completed task, the AI cross references *everything* (from the specific name of the task to the granular details within the picture) ensuring that users are actually putting in the work before rewarding them.
-
-**Gamified Progression:** As users verify their tasks, they earn points that unlock access to exclusive rewards. While the platform currently focuses on individual progression and sharing verifications with a private circle of friends, internal competitions and leaderboards are on the roadmap to take the gamification loop to the next level.
+* **Structured Goal Decomposition ("Wills"):** Converts ambitious academic and lifestyle milestones into manageable daily micro-tasks mapped against target completion deadlines.
+* **Multimodal AI Verification Pipeline:** Evaluates user-submitted photographic proof (e.g. solved STEM problem sets, active study setups, gym logs) using the **Gemini Multimodal API**, verifying task authenticity with structured validation schemas before awarding streak progress.
+* **Tamper-Resistant Anti-Cheat Telemetry:** Tasks are server-validated against EXIF metadata, timestamp boundaries, and repetition heuristics to preserve streak integrity.
+* **Social Accountability & Cohorts:** Real-time XP reward mechanics, streak momentum loops, and private cohort feeds for mutual accountability.
 
 ## 🛠 Tech Stack
 
